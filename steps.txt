@@ -1,4 +1,0 @@
-conexao com a api
-criar cards como componentes com props
-exibir os characters
-fazer um design decente
