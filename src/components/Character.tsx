@@ -6,6 +6,7 @@ interface Props {
     type: string;
     gender: string;
     origin: string;
+    image: string;
 }
 
 class Character extends React.Component<Props> {
@@ -13,6 +14,7 @@ class Character extends React.Component<Props> {
     render() {
         return (
             <div>
+                <img src={this.props.image} alt="" />
                 name: {this.props.name}
                 status: {this.props.status},
                 species: {this.props.species},
