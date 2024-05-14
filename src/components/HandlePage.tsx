@@ -15,7 +15,6 @@ const HandlePage: React.FC = () => {
 
   return (
     <div>
-      {page}
       <Button text="Page Up" onClick={handlePageUp} />
       <Button text="Page Down" onClick={handlePageDown} />
     </div>
