@@ -7,11 +7,15 @@ import HandlePage from './components/HandlePage';
 import HandleName from './components/HandleName';
 import HandleStatus from './components/HandleStatus';
 import HandleSpecie from './components/HandleSpecie';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './assets/styles/index'
 
 function App() {
   return (
     <CharProvider>
-      <AppContent />
+      <ThemeProvider theme={theme}>
+        <AppContent />
+      </ThemeProvider>
     </CharProvider>
   );
 }
@@ -36,10 +40,10 @@ function AppContent() {
   return (
     <>
       <HandleName />
-      <HandlePage />
       <HandleSpecie />
       <HandleStatus />
-      
+      <HandlePage />
+
       Page: {page}<br />
       {status && (<>Status: {status} <br /></>)}
       {specie && (<>Specie: {specie} <br /></>)}
