@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { Filters } from "../assets/styles/index";
 import { useCharContext } from '../CharContext';
 
 const HandlePage: React.FC = () => {
@@ -14,10 +15,13 @@ const HandlePage: React.FC = () => {
   };
 
   return (
-    <div>
-      <Button text="Page Up" onClick={handlePageUp} />
-      <Button text="Page Down" onClick={handlePageDown} />
-    </div>
+    <Filters>
+      <div>
+
+      <Button variant='primary' text="Prev" onClick={handlePageDown} />
+      <Button variant='primary' text="Next" onClick={handlePageUp} />
+      </div>
+    </Filters>
   );
 };
 

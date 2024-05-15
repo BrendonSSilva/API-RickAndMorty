@@ -1,5 +1,6 @@
 import React from "react";
 import { useCharContext } from '../CharContext';
+import { ButtonDefault, StyledInput } from "../assets/styles";
 
 const HandleName: React.FC = () => {
   const { name, setName } = useCharContext();
@@ -9,10 +10,9 @@ const HandleName: React.FC = () => {
   };
 
   return (
-      <form>
-        <input type="text" name="" id="" placeholder="Name" value={name} onChange={handleInputChange} />
-        <button type="submit">Submit</button>
-      </form>
+    <form>
+      <StyledInput type="text" name="" id="" placeholder="Name" value={name} onChange={handleInputChange} />
+    </form>
   );
 };
 
