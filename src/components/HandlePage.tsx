@@ -17,9 +17,9 @@ const HandlePage: React.FC = () => {
   return (
     <Filters>
       <div>
-
-      <Button variant='primary' text="Prev" onClick={handlePageDown} />
-      <Button variant='primary' text="Next" onClick={handlePageUp} />
+        <Button variant='tertiary' text="Prev" onClick={handlePageDown} />
+        {page}
+        <Button variant='tertiary' text="Next" onClick={handlePageUp} />
       </div>
     </Filters>
   );
