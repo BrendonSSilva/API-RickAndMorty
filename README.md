@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# API Rick and Morty - React + Vite + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Acesse o projeto: [https://api-rick-and-morty-brendon.vercel.app/](https://api-rick-and-morty-brendon.vercel.app/)
 
-Currently, two official plugins are available:
+Este é um projeto criado para consumir a [API de Rick and Morty](https://rickandmortyapi.com/). Há dois anos, desenvolvi um projeto similar utilizando esta mesma API, disponível [aqui](https://github.com/BrendonSSilva/ReactJsProject-API-RickAndMorty). Decidi recriar o projeto com base na minha experiência atual, utilizando tecnologias mais modernas e boas práticas de desenvolvimento.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- **React** com **Vite**
+- **TypeScript**
+- **Styled-components** para estilização
+- **Axios** para requisições HTTP
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Hooks do React Utilizados
 
-- Configure the top-level `parserOptions` property like this:
+- **createContext e useContext**: Utilizados para criar e consumir variáveis de contexto, facilitando o compartilhamento de estado entre componentes e a filtragem dos personagens.
+- **useEffect**: Utilizado para executar efeitos colaterais, como acompanhar as modificações dos valores das variáveis e realizar ações com base nessas mudanças.
+- **useState**: Utilizado para criar e gerenciar o estado local dentro dos componentes. Com o `useState`, você pode declarar uma variável de estado e uma função para atualizá-la. Por exemplo:
+  ```javascript
+  const [state, setState] = useState(initialState);
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Props
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+As props são utilizadas para dinamizar componentes, tanto em funções quanto no estilo, quando utilizando styled-components. Elas permitem passar dados e funções para os componentes filhos, tornando-os mais reutilizáveis e configuráveis.
+
+# Como Utilizar?
+
+- Clonar o repositório:
+~~~
+git clone https://github.com/BrendonSSilva/API-RickAndMorty.git
+~~~
+- npm install
+~~~
+~~~
+- npm install axios
+~~~
+~~~
+- npm install styled-components
+~~~
+- Iniciar o app: 
+~~~
+npm run dev
+~~~
+
+# Autor
+Brendon Schimmelpfennig da Silva
+
+LinkedIn: https://www.linkedin.com/in/brendon-silva/
