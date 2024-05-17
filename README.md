@@ -29,13 +29,16 @@ As props são utilizadas para dinamizar componentes, tanto em funções quanto n
 ~~~
 git clone https://github.com/BrendonSSilva/API-RickAndMorty.git
 ~~~
-- npm install
+- Entrar no diretório
+- Instalar as dependências:
+~~~
+npm install
 ~~~
 ~~~
-- npm install axios
+npm install axios
 ~~~
 ~~~
-- npm install styled-components
+npm install styled-components
 ~~~
 - Iniciar o app: 
 ~~~
