@@ -8,7 +8,8 @@ import HandleName from './components/HandleName';
 import HandleStatus from './components/HandleStatus';
 import HandleSpecie from './components/HandleSpecie';
 import { ThemeProvider } from 'styled-components';
-import { theme } from './assets/styles/index'
+import { Card, theme } from './assets/styles/index'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -44,25 +45,25 @@ function AppContent() {
       <HandleStatus />
       <HandlePage />
 
-      Page: {page}<br />
-      {status && (<>Status: {status} <br /></>)}
-      {specie && (<>Specie: {specie} <br /></>)}
 
-      {data.results.map(character => {
-        return (
-          <div key={character.id}>
-            <Character
-              image={character.image}
-              name={character.name}
-              status={character.status}
-              species={character.species}
-              type={character.type}
-              gender={character.gender}
-              origin={character.origin.name}
-            />
-          </div>
-        );
-      })}
+      <Card>
+        {data.results.map(character => {
+          return (
+            <div key={character.id}>
+              <Character
+                image={character.image}
+                name={character.name}
+                status={character.status}
+                species={character.species}
+                type={character.type}
+                gender={character.gender}
+                origin={character.origin.name}
+              />
+            </div>
+          );
+        })}
+      </Card>
+      <Footer/>
     </>
   );
 }
